@@ -5,6 +5,33 @@ html(lang="ja")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
+    link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
   body
-    h1 テスト中
+    header
+      .container
+        .header-left
+          h1.logo
+            a(href="#")
+              img(src='./img/logo@2x.png')
+        .header-right
+          nav.nav-item
+            ul
+              li
+                a(href="#") Card
+              li
+                a(href="#") News
+              li
+                a(href="#") Price
+              li
+                a(href="#") Access
+              li
+                a(href="#") Contact
+    main
+      section.conA
+        .container
+          .text
+            h2 一番伝えたいことを書く
+            p リードリードリード
+            a(href="#") お問い合わせ
+  footer

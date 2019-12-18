@@ -42,7 +42,7 @@ const
     dest: {
       html: "dist/",
       css: "dist/css",
-      img: "dist/img/",
+      img: "dist/img",
       js: "dist/js",
     }
   }
