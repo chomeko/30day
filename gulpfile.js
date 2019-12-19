@@ -142,7 +142,7 @@ gulp.watch( './src/js/*.js', gulp.task('bs-reload') ); //jsが更新されたら
 gulp.task('default', gulp.series(gulp.parallel('browser-sync', 'watch')));
 
 // build
-gulp.task( 'build', gulp.series(gulp.parallel('pug','sass','js','imagemin')));
+gulp.task( 'build', gulp.series(gulp.parallel('pug','sass','js')));
 
 //圧縮率の定義
 var imageminOption = [
