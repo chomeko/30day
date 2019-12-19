@@ -42,3 +42,7 @@ button(type="button").toguru
 ```
 li:not(first-child)
 ```
+# gulp
+- 画像が読み込めないエラー解決
+>build にimageminの追加をし
+>タスクをbuildより上で定義する必要があった。
