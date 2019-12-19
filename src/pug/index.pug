@@ -7,6 +7,9 @@ html(lang="ja")
     title Document
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
+    script(src="https://use.fontawesome.com/fb1861bf7a.js")
+    script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+    script(type="text/javascript", src="js/toguru.min.js")
   body
     header
       .container
@@ -14,6 +17,9 @@ html(lang="ja")
           h1.logo
             a(href="#")
               img(src='./img/logo@2x.png')
+
+          button(type="button").toguru
+            span.fa.fa-bars(title="MENU")
         .header-right
           nav.nav-item
             ul
