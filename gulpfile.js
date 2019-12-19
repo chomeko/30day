@@ -149,9 +149,6 @@ var imageminOption = [
 pngquant({ quality: [.7, .85], }),
 mozjpeg({ quality: 85 }),
 imagemin.gifsicle({
-interlaced: false,
-optimizationLevel: 1,
-colors: 256
 }),
 imagemin.jpegtran(),
 imagemin.optipng(),
