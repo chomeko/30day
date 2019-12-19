@@ -122,6 +122,29 @@ done();
 //done();
 //});
 
+//圧縮率の定義
+var imageminOption = [
+pngquant({ quality: [.7, .85], }),
+mozjpeg({ quality: 85 }),
+imagemin.gifsicle({
+  interlaced: false,
+  optimizationLevel: 1,
+  colors: 256
+}),
+imagemin.jpegtran(),
+imagemin.optipng(),
+imagemin.svgo()
+];
+// 画像の圧縮
+// $ gulp imageminで./src/img/base/フォルダ内の画像を圧縮し./src/img/フォルダへ
+// .gifが入っているとエラーが出る
+gulp.task('images', function () {
+return gulp
+.src('./src/img/base/*.{png,jpg,gif,svg}')
+.pipe(imagemin(imageminOption))
+.pipe(gulp.dest(paths.dest.img));
+});
+
 // 監視
 gulp.task( 'watch', function(done) {
 //gulp.watch( './src/html/*.html', gulp.task('html') );//htmlが更新されたらgulp htmlを実行
@@ -143,23 +166,3 @@ gulp.task('default', gulp.series(gulp.parallel('browser-sync', 'watch')));
 
 // build
 gulp.task( 'build', gulp.series(gulp.parallel('pug','sass','js','images')));
-
-//圧縮率の定義
-var imageminOption = [
-pngquant({ quality: [.7, .85], }),
-mozjpeg({ quality: 85 }),
-imagemin.gifsicle({
-}),
-imagemin.jpegtran(),
-imagemin.optipng(),
-imagemin.svgo()
-];
-// 画像の圧縮
-// $ gulp imageminで./src/img/base/フォルダ内の画像を圧縮し./src/img/フォルダへ
-// .gifが入っているとエラーが出る
-gulp.task('images', function () {
-return gulp
-.src('./src/img/base/*.{png,jpg,gif,svg}')
-.pipe(imagemin(imageminOption))
-.pipe(gulp.dest(paths.dest.img));
-});
