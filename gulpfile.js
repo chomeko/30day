@@ -142,7 +142,7 @@ gulp.watch( './src/js/*.js', gulp.task('bs-reload') ); //jsが更新されたら
 gulp.task('default', gulp.series(gulp.parallel('browser-sync', 'watch')));
 
 // build
-gulp.task( 'build', gulp.series(gulp.parallel('pug','sass','js','imagemin')));
+gulp.task( 'build', gulp.series(gulp.parallel('pug','sass','js','images')));
 
 //圧縮率の定義
 var imageminOption = [
@@ -160,7 +160,7 @@ imagemin.svgo()
 // 画像の圧縮
 // $ gulp imageminで./src/img/base/フォルダ内の画像を圧縮し./src/img/フォルダへ
 // .gifが入っているとエラーが出る
-gulp.task('imagemin', function () {
+gulp.task('images', function () {
 return gulp
 .src('./src/img/base/*.{png,jpg,gif,svg}')
 .pipe(imagemin(imageminOption))
