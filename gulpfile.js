@@ -146,7 +146,7 @@ gulp.task( 'build', gulp.series(gulp.parallel('pug','sass','js','images')));
 
 //圧縮率の定義
 var imageminOption = [
-pngquant({ quality: [70-85], }),
+pngquant({ quality: [.7, .85], }),
 mozjpeg({ quality: 85 }),
 imagemin.gifsicle({
 interlaced: false,
