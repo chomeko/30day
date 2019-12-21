@@ -59,27 +59,33 @@ button(type="button").toguru
 ```
 li:not(first-child)
 ```
-# card部分
+# 2dayのcard部分
 - 下線
 ```
-&:before
-      content: ''
-      position: absolute
-      left: 50%
-      bottom: -34px/*線の上下位置*/
-      display: inline-block
-      width: 80px/*線の長さ*/
-      height: 5px/*線の太さ*/
-      -webkit-transform: translateX(-50%)
-      transform: translateX(-50%)/*位置調整*/
-      background-color: $blue/*線の色*/
+.title-line
+  height: 4.5px
+  width: 85px
+  background-color: $blue
+  margin: auto
+  margin-bottom: 48px
 ```
 - カラム落ち
 >flex-wrap: wrap
 - 3枚並び
->width: calc(100%/3 - 20px )
+>width: calc(100%/3 - 20px )でもやれるけど
+>今回はflex: 1 1 300pxにした
 - nの倍数を指定できる
 >&:nth-child(3n)
+>レスポンシブでうまくできなかった為
+>今回は使いませんでした
+- テキスト部分の高さを統一する
+>articleにもdisplay: flexを当てて
+>a要素をflex: 1とする
+- 画像には基本これ
+```
+background-position: center
+background-size: cover
+```
 # gulp
 - 画像が読み込めないエラー解決
 >build にimageminの追加をし
