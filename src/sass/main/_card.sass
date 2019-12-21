@@ -3,88 +3,58 @@
   background: #EFEFEF
   .inner
     max-width: 1106px
-
+    display: flex
+    flex-wrap: wrap
+  .title-line
+    height: 4.5px
+    width: 85px
+    background-color: $blue
+    margin: auto
+    margin-bottom: 48px
   h2
     font-size: 6.0rem
     text-align: center
     color: $black
     padding-top: 60px
-    padding-bottom: 44.43px
-    &:before
-      content: ''
-      position: absolute
-      left: 50%
-      bottom: -34px/*線の上下位置*/
-      display: inline-block
-      width: 80px/*線の長さ*/
-      height: 5px/*線の太さ*/
-      -webkit-transform: translateX(-50%)
-      transform: translateX(-50%)/*位置調整*/
-      background-color: $blue/*線の色*/
-  .card-box
-    margin-top: 40px
-    padding-bottom: 117px
+    padding-bottom: 40px
+  article
+    flex: 1 1 300px
+    margin-bottom: 20px
     display: flex
-    flex-wrap: wrap
-  .card
+    margin: 15px
+  .photo
+    min-height: 161px
+    background-color: $gree
+    background-position: center
+    background-size: cover
+  a
     background-color: $whit
     padding: 16px 16px 28px 16px
-    width: calc(100%/3 - 20px )
-    margin-right: 30px
-    margin-bottom: 20px
-    &:nth-child(3n)
-      margin-right: 0
-    .card-img
-      margin: auto
-      width: 310px
-      height: 162px
-      background-color: #dddddd
-    h3
-      font-size: 2rem
-      padding-top: 26px
-      color: $card-text
-    p
-      color: $card-text
-      font-weight: bold
-      padding-top: 20px
+    display: block
+    flex: 1
+    &:hover
+      opacity: 0.8
+  .card-text
+    margin: 10px
+  h3
+    font-size: 2rem
+    padding-top: 26px
+    color: $card-text
+  p
+    color: $card-text
+    font-weight: bold
+    font-size: 1.6rem
+    padding-top: 20px
 @media (max-width: 450px)
   #card
-    .card-box
-      margin-top: 40px
-      padding-bottom: 117px
-    .card
-      background-color: $whit
-      padding: 0
-      margin: 10px
-      width: 100%
-      &:nth-child(3n)
-      margin-right: 10px !important
-    .card-img
-      width: 100% !important
-      width: 0
-      height: 162px
-      background-color: #dddddd
-    .card-text
-      margin: 10px
+    article
+      margin: 0
+      margin-bottom: 30px
     h2
-      font-size: 4rem
-      padding-bottom: 0
-      padding-top: 40px
+      font-size: 12.5vw
       &::before
         bottom: 130px
     h3
       font-size: 1.8rem
-      margin: 15px 0 15px 0
-      padding-top: 0 !important
     p
       font-size: 1.4rem
-      margin: 14px 0 14px 0
-      padding: 0 !important
-@media (min-width: 451px) and (max-width: 767px)
-  #card
-  h2
-    font-size: 6.0rem
-@media (min-width: 768px) and (max-width: 1086px)
-  #card
-  h2
-    font-size: 6.0rem
