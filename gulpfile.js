@@ -103,6 +103,7 @@ browserSync.init({
 server: {
 baseDir: "dist/",
 index: "index.html",
+head: "head.html",
 }
 });
 done();

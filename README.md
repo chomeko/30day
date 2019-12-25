@@ -86,6 +86,17 @@ li:not(first-child)
 background-position: center
 background-size: cover
 ```
+# 見出し
+>position: relative
+>position: absolute
+>content: " "
+>top
+>left
+>width
+>height
+>background: linear-gradient(transparent 50%, #ece811 0%)
+>background: repeating-linear-gradient(-45deg,
+>z-index: -1
 # gulp
 - 画像が読み込めないエラー解決
 >build にimageminの追加をし
