@@ -1,3 +1,4 @@
+@mixin btns( )
 /* 4day */
 .inner
   max-width: 475px
@@ -96,6 +97,7 @@
     width: 50px
   .hed12-box
     margin-bottom: 34px
+    display: inline-block
     span
       display: inline
       padding-right: 8px
@@ -156,6 +158,7 @@
     position: relative
     width: 215px
     padding: 5px 9px 5px 10px
+    margin-bottom: 30px
     text-align: center
     &::before
       position: absolute
@@ -166,3 +169,209 @@
       height: 50%
       z-index: -1
       background: repeating-linear-gradient(-45deg, #3F51B5, #3F51B5 13px,#7385E9 0px,#7385E9 25px)
+  /* btn */
+#btn
+  .inner
+    max-width: 750px
+  .btn1
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: auto
+    &:hover
+      opacity: 0.8
+    p
+      padding-left: 16px
+  .btn2-html
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    position: relative
+    &:hover
+        opacity: 0.8
+    img
+      position: absolute
+      right: 5%
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+    p
+      padding-left: 16px
+  .btn2-before
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    position: relative
+    &:hover
+      opacity: 0.8
+    &::after
+      position: absolute
+      content: ''
+      top: 50%
+      right: 5%
+      width: 16px
+      height: 16px
+      transform: translateY(-50%)
+      background-image: url("/img/arrow.svg")
+    p
+      padding-left: 16px
+  .btn2-back
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background-color: #3F51B5
+    background: url("/img/arrow.svg") no-repeat center right 12px/14px 14px
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    position: relative
+    &:hover
+        opacity: 0.8
+    img
+      position: absolute
+      right: 5%
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+    p
+      padding-left: 16px
+  .btn3
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    position: relative
+    &:hover
+        opacity: 0.8
+    img
+      position: absolute
+      top: 50%
+      right: 30%
+      transform: translateY(-50%)
+    p
+      padding-left: 16px
+  .btn4
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    box-shadow: 0px 5px 0px #25379B
+    &:hover
+        opacity: 0.8
+    p
+      padding-left: 35px
+  .btn5
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    border-radius: 3px
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    background: linear-gradient(#3F51B5,#20295B)
+    &:hover
+        opacity: 0.8
+    p
+      padding-left: 35px
+  .btn6
+    width: 750px
+    height: 104px
+    margin-bottom: 30px
+    background: #333333
+    border-top: 1px solid #707070
+    border-bottom: 1px solid #707070
+    position: relative
+    a
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: #ffffff
+      border: 2px solid #FFFFFF
+      display: inline-block
+      padding: 13px 72px 12px 33px
+      &:hover
+        background-image: linear-gradient(#ffffffa6)
+  .btn7
+    display: block
+    width: 123px
+    height: 123px
+    background: #25379B
+    margin: 0 auto
+    border-radius: 50%
+    margin-bottom: 30px
+    position: relative
+    &:hover
+        opacity: 0.8
+    p
+      color: #ffff
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  .btn10
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    color: #ffffff
+    margin-bottom: 30px
+    margin: auto
+    position: relative
+    border-radius: 30px
+    text-align: left
+    &:hover
+        opacity: 0.8
+    p
+      display: inline-block
+      padding-left: 20px
+    img
+      position: absolute
+      top: 50%
+      right: 5%
+      transform: translateY(-50%)
+  .btn9
+    transition: .3s
+    display: block
+    width: 230px
+    padding: 14.5px 0
+    background: #3F51B5
+    color: #ffffff
+    margin-bottom: 30px
+    text-align: left
+    margin: 0 auto
+    box-shadow: 0px 3px 0px #25379B
+    &:hover
+        opacity: 0.8
+    p
+      padding-left: 35px

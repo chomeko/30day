@@ -97,6 +97,30 @@ background-size: cover
 >background: linear-gradient(transparent 50%, #ece811 0%)
 >background: repeating-linear-gradient(-45deg,
 >z-index: -1
+#ボタン
+- htmlバージョン
+```
+a.btn2-html(href="#")
+  p htmlはこちら2
+  img(src="../img/arrow.svg", alt="")
+```
+- 擬似要素バージョン
+```
+&::after
+  position: absolute
+  content: ''
+  top: 50%
+  right: 5%
+  width: 16px
+  height: 16px
+  transform: translateY(-50%)
+  background-image: url("/img/arrow.svg")
+```
+- 背景画像バージョン
+```
+background-color: #3F51B5
+background: url("/img/arrow.svg") no-repeat center right 12px/14px 14px
+```
 # gulp
 - 画像が読み込めないエラー解決
 >build にimageminの追加をし
