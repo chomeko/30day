@@ -126,4 +126,39 @@ html(lang="ja")
             p more
             img(src="../img/more.svg", alt="")
 
+      section#price
+        .inner
+          h2 Price
+          .title-line
+          .price-box
+            img(src='../img/price-img.png')
+            .table-box
+              table
+                tr
+                  th
+                  th column1
+                  th column2
+                tr
+                  td row1
+                  td 100円
+                  td 100円
+                tr
+                  td row2
+                  td 6,000円
+                  td 0円
+                tr
+                  td(rowspan="1") row3
+                  td <span>6,000円</span><br>
+                    | ※ 今だけ半額
+                  td 0円
+                tr
+                  td row4
+                  td 100円
+                  td 100円
+              p ※ 目安なので詳しくは
+                a(href="#") お問い合わせ
+                |ください。
+
+          <!-- .inner -->
+
   footer
