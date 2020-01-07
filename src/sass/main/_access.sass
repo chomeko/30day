@@ -1,0 +1,56 @@
+#access
+  background: #FFFFFF
+  .inner
+    max-width: 800px
+  .title-line
+    height: 4.5px
+    width: 76px
+    background-color: $blue
+    margin: auto
+    margin-bottom: 100px
+  h2
+    font-size: 6.0rem
+    text-align: center
+    color: $black
+    padding-top: 60px
+    padding-bottom: 38px
+  iframe
+    margin-bottom: 30px
+  table
+    margin-left: 40px
+    margin-bottom: 37px
+    td
+      padding: 5px 50px 0 0
+  a
+    display: block
+    background: #3F51B5
+    color: #FFFFFF
+    width: 305px
+    padding: 15px 59px 15px 59px
+    position: relative
+    border-radius: 12px
+    margin: auto
+    &::after
+      position: absolute
+      content: ''
+      top: 50%
+      right: 5%
+      width: 16px
+      height: 16px
+      transform: translateY(-50%)
+      background-image: url("/img/arrow2.svg")
+    p
+      font-size: 20px
+  @media  (max-width: 767px)
+    table
+      margin-left: 40px
+      margin-bottom: 30px
+      td
+        padding: 5px 40px 0 0
+    iframe
+      width: 100%
+    a
+      padding: 15px 35px 15px 35px
+      width: 240px
+    p
+      font-size: 18px !important

@@ -28,7 +28,11 @@
       padding-top: 4px
       margin-left: 7.5px
       min-width: 85px
-
+    .news-text
+      color: #000
+      max-width: 576px
+      padding-top: 4px
+      margin: 0
     p
       max-width: 576px
       padding-top: 4px
@@ -68,5 +72,9 @@
       color: #e81919
 
   @media  (max-width: 767px)
-    .news-box li a
+    .labels
       display: none
+    .news-text
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
