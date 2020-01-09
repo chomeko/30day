@@ -171,8 +171,58 @@ html(lang="ja")
             tr
               td アクセス
               td 〇〇駅から右に５分
-          a(href="")
+          a(href="https://goo.gl/maps/MFpPmW8S1rQt8C2JA")
             p Googleマップで見る
+        <!-- .inner -->
+
+      section#contact
+        .inner
+          h2 Contact
+          .title-line
+          form
+            .form-content
+              label(for="name") お名前
+                span.requied 必須
+              input.text-test(id="name"  name="name" type="text" placeholder="山田太郎")
+            .form-content
+              label(for="email") メールアドレス
+                span.requied 必須
+              input.text-test(id="email" name="email" type="text" placeholder="text@example.com")
+            .form-content
+              label(for="type") お問い合わせ種別
+              select(id="type" name="type")
+                option(value="" hidden) ーーー
+                option セレクト１
+                option セレクトB
+                option セレクトC
+            .form-content
+              label(for="kanso") お問い合わせ内容
+              textarea(id="kanso" name="kanso" placeholder="お問い合わせを入力してください")
+            .form-content-razio
+              label
+                input(class="radio-test" type="radio" name="radio-name")
+                |
+                span ラジオ1
+              label
+                input(class="radio-test" type="radio" name="radio-name")
+                |
+                span ラジオ2
+              label
+                input(class="radio-test" type="radio" name="radio-name")
+                |
+                span ラジオ3
+            .form-content-check
+              label
+                input(class="check-test" type="checkbox" name="check-name")
+                |
+                span
+                  a(href="#") プライバシーポリシー
+                |に合意する
+            a.form-submit(href="#")
+              p 送信する
+        <!-- .inner -->
+      section#footer
+        .inner
         <!-- .inner -->
 
   footer

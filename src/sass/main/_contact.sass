@@ -1,0 +1,260 @@
+#contact
+  background: #EFEFEF
+  .inner
+    max-width: 800px
+  .title-line
+    height: 4.5px
+    width: 76px
+    background-color: $blue
+    margin: auto
+    margin-bottom: 48px
+  h2
+    font-size: 6.0rem
+    text-align: center
+    color: $black
+    padding-top: 60px
+    padding-bottom: 28px
+  form
+    padding-top: 57px
+    overflow: hidden
+    background: #FFFFFF
+  .requied
+    background: #E81919
+    color: #ffffff
+    border-radius: 12px
+    width: 46px
+    font-size: 14px
+    display: block
+    text-align: center
+    margin-left: 5px
+  .form-content
+    display: flex
+    justify-content: space-between
+    padding-left: 52px
+    padding-right: 43px
+    margin-bottom: 49px
+    label
+      font-size: 18px
+      font-weight: bold
+      padding-top: 12px
+    .text-test
+      -moz-appearance: none
+      -webkit-appearance: none
+      appearance: none
+      border: 1px solid #707070
+      font-size: 16px
+      padding: 5px 10px
+      width: 528px
+      height: 60px
+      line-height: 1.5
+    .text-test:focus
+      border: 1px solid #707070
+      box-shadow: none
+      outline: none
+    .text-test::-webkit-input-placeholder
+      color: #cccccc
+    .text-test::-moz-placeholder
+      color: #cccccc
+    .text-test:-ms-input-placeholder
+      color: #cccccc
+
+    select
+      -moz-appearance: none
+      -webkit-appearance: none
+      appearance: none
+      background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px
+      border: 1px solid #707070
+      border-radius: 0
+      cursor: pointer
+      font-size: 16
+      padding: 5px 10px
+      width: 528px
+      height: 60px
+    select:not(:focus)
+      color: #ccc
+    select::-ms-expand
+      display: none
+    select::focus
+      border: 1px solid #707070
+      box-shadow: none
+      outline: none
+
+    textarea
+      -moz-appearance: none
+      -webkit-appearance: none
+      appearance: none
+      border: 1px solid #707070
+      border-radius: 0
+      font-size: 16px
+      padding: 5px 10px
+      width: 528px
+      height: 240px
+
+    textarea:focus
+      border: 1px solid #707070
+      box-shadow: none
+      outline: none
+
+    textarea::-webkit-input-placeholder
+      color: #cccccc
+    textarea::-moz-placeholder
+      color: #cccccc
+    textarea:-ms-input-placeholder
+      color: #cccccc
+
+  .form-content-razio
+    padding-left: 57px
+    margin-bottom: 45px
+    label
+      margin-right: 22px
+    .radio-test
+      display: none
+    .radio-test + span
+      cursor: pointer
+      display: inline-block
+      margin-right: 10px
+      padding-left: 40px
+      position: relative
+    .radio-test + span::before
+      -webkit-transform: translateY(-50%)
+      background: #fff
+      border: 1px solid #707070
+      border-radius: 50%
+      content: ""
+      display: block
+      height: 30px
+      left: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+    .radio-test + span::after
+      -webkit-transform: translateY(-50%)
+      background: #3F51B5
+      border: 1px solid transparent
+      border-radius: 50%
+      content: ""
+      height: 18px
+      left: 6px
+      opacity: 0
+      padding: 2px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      transition: all 0.3s ease 0s
+      width: 18px
+    .radio-test:checked + span::after
+      opacity: 1
+  .form-content-check
+    width: 290px
+    margin: auto
+    margin-bottom: 28px
+    .check-test
+      display: none
+    .check-test + span
+      cursor: pointer
+      display: inline-block
+      margin: 0 0.2em 0
+      padding-left: 45px
+      position: relative
+      a
+        text-decoration: underline
+        color: #333333
+    .check-test + span::before
+      -webkit-transform: translateY(-50%)
+      background: #fff
+      border: 1px solid #707070
+      border-radius: 2px
+      content: ""
+      display: block
+      height: 30px
+      left: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+    .check-test + span::after
+      -webkit-transform: translateY(-50%) rotate(-45deg)
+      border-bottom: 4px solid #3F51B5
+      border-left: 4px solid #3F51B5
+      content: ""
+      display: block
+      height: 14px
+      left: 5px
+      margin-top: -0.2em
+      opacity: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%) rotate(-45deg)
+      transition: all 0.3s ease 0s
+      width: 20px
+    .check-test:checked + span::after
+      opacity: 1
+  .form-submit
+    display: block
+    width: 261px
+    height: 56px
+    margin: auto
+    background: #3F51B5
+    border-radius: 12px
+    color: #FFFFFF
+    font-size: 22px
+    position: relative
+    margin-bottom: 60px
+    &::after
+      content: ''
+      background-image: url(/img/arrow2.svg)
+      width: 18px
+      height: 20px
+      position: absolute
+      top: 50%
+      right: 5%
+      transform: translateY(-50%)
+      color: #ffffff
+    p
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  @media  (max-width: 767px)
+    .form-content
+      display: block
+      margin-bottom: 10px
+      .text-test
+        font-size: 16px
+        padding: 5px 10px
+        max-width: 528px
+        margin: auto
+        width: 100%
+        height: 60px
+        line-height: 1.5
+        display: block
+      select
+        font-size: 16
+        padding: 5px 10px
+        max-width: 528px
+        width: 100%
+        height: 60px
+        display: block
+        margin: auto
+      textarea
+        font-size: 16px
+        max-width: 528px
+        width: 100%
+        height: 240px
+        display: block
+        margin: auto
+    .form-content-razio
+      padding-left: 57px
+      margin-bottom: 35px
+      margin-top: 25px
+      label
+        margin-bottom: 20px
+        //display: block
+        //text-align: center
+    label
+      display: block
+      text-align: center
+    .requied
+      margin: auto

@@ -121,6 +121,27 @@ a.btn2-html(href="#")
 background-color: #3F51B5
 background: url("/img/arrow.svg") no-repeat center right 12px/14px 14px
 ```
+# day7のcontact
+- formのlabelの縦位置中央
+>fzが20pxのとき
+>lhが2なら、文字ブロックの余白は10
+>lhが1.5なら、文字ブロックの余白は5
+>文字のサイズが20だと、lhが1のとき文字ブロックのサイズは20で、余白は0
+>lhが1.5だと文字ブロックの高さが20*1.5で30になるので、20を引いて半分にして5
+>lhが2だと文字ブロックのサイズは40。文字そのものを抜いて上下がそれぞれ10
+- selectボックスにはpressholderが効かないからoptionにStyleの設定をする
+```
+select(id="type" name="type")
+  option.op(value="" style="display:none;") ーーー
+  option セレクト１
+  option セレクトB
+  option セレクトC
+```
+>CSSでfocusしてない時は文字色を変えることができる
+```
+select:not(:focus)
+  color: #cccccc
+```
 # gulp
 - 画像が読み込めないエラー解決
 >build にimageminの追加をし
