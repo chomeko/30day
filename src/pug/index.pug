@@ -9,7 +9,9 @@ html(lang="ja")
     link(rel="stylesheet", href="css/style.css")
     script(src="https://use.fontawesome.com/fb1861bf7a.js")
     script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
     script(type="text/javascript", src="js/toguru.min.js")
+    script(type="text/javascript", src="js/topscroll.min.js")
   body
     header
       .container
@@ -33,7 +35,7 @@ html(lang="ja")
                 a(href="#") Access
               li
                 a(href="#") Contact
-    main
+    main#wrap
       section.conA
         .inner
           .text
@@ -163,7 +165,7 @@ html(lang="ja")
         .inner
           h2 Access
           .title-line
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.528292663173!2d136.88258115124583!3d35.16838318022052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376de737d9a29%3A0x95fb085c8053a6d2!2z44OK44OK44Gh44KD44KT5Lq65b2i!5e0!3m2!1sja!2sjp!4v1576240021306!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.528292663173!2d136.88258115124583!3d35.16838318022052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376de737d9a29%3A0x95fb085c8053a6d2!2z44OK44OK44Gh44KD44KT5Lq65b2i!5e0!3m2!1sja!2sjp!4v1576240021306!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           table
             tr
               td 住所
@@ -221,8 +223,34 @@ html(lang="ja")
             a.form-submit(href="#")
               p 送信する
         <!-- .inner -->
+    footer
       section#footer
         .inner
+          .flex
+            .footA
+              img(src="../img/logo@2x.png", alt="logo")
+              p 住所：ほげほげのほげほげ
+              p TEL：0000-00-0000
+            nav.footB
+              ul
+                li
+                  a(href="") Card
+                li
+                  a(href="") News
+                li
+                  a(href="") Price
+                li
+                  a(href="") Access
+                li
+                  a(href="") Contact
+            .footC
+              div
+                span.icon1
+                span.icon2
+                span.icon3
+          .footD
+            p Copyright © 2018 @haniwa008 All rights reserved.
+            p#PageTopBtn
+              a(href="#wrap")
+                img(src="../img/topbtn.svg", alt="")
         <!-- .inner -->
-
-  footer

@@ -1,0 +1,94 @@
+#footer
+  background: transparent linear-gradient(180deg, #666666 0%, #333333 100%) 0% 0% no-repeat padding-box
+  height: 338px
+  position: relative
+  .inner
+    max-width: 1060px
+    padding-top: 74px
+  .flex
+    display: flex
+    margin-bottom: 75px
+  .footA
+    flex: 0 0 25%
+    img
+      margin-bottom: 25px
+      width: 200px
+      height: 39px
+    p
+      color: #FFFFFF
+      margin-bottom: 13px
+  .footB
+    padding-top: 5px
+    flex: 0 0 50%
+    ul
+      display: flex
+      justify-content: center
+    li
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    a
+      color: #FFFFFF
+  .footC
+    padding-top: 5px
+    flex: 25%
+    width: 122px
+    div
+      display: flex
+      justify-content: flex-end
+    span
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      margin-right: 16px
+      display: flex
+      &.icon1
+        background: #55ACEE
+      &.icon2
+        background: #3B5998
+      &.icon3
+        background: #D93177
+  .footD
+    text-align: center
+    p
+      color: #ffffff
+      font-size: 14px
+    #PageTopBtn
+      position: fixed
+      bottom: 15px
+      right: 20px
+  @media (max-width: 800px)
+    .inner
+      width: 100%
+      padding-top: 60px
+      text-align: center
+    .flex
+      display: block
+    .footB
+      margin-bottom: 10px
+    .footC
+      margin: auto
+      span:last-child
+        margin-right: 0
+  @media  (min-width: 600px) and (max-width: 800px)
+    .flex
+      display: flex
+      flex-wrap: wrap
+    .footA
+      flex: 0 0 40%
+    .footB
+      flex: 0 0 60%
+    .footC div
+      justify-content: center
+    .footD img
+      width: 50px
+      height: 50px
+  @media (max-width: 599px)
+    .flex
+      margin-bottom: 35px
+    .footD
+      p
+        font-size: 12px
+      img
+        width: 35px
+        height: 35px
