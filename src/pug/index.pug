@@ -11,16 +11,13 @@ html(lang="ja")
     script(src="https://use.fontawesome.com/fb1861bf7a.js")
     script(src="https://code.jquery.com/jquery-2.2.3.min.js")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-    script(type="text/javascript", src="js/position-nav.min.js")
-    script(type="text/javascript", src="js/toguru.min.js")
-    script(type="text/javascript", src="js/topscroll.min.js")
   body
     header
       .container
         .header-left
-          h1.logo
+          h1
             a(href="#")
-              img(src='../img/logo@2x.png')
+              img(src='../img/logo@2x.png' alt="logo")
 
           button(type="button").toguru
             span.fa.fa-bars(title="MENU")
@@ -128,14 +125,13 @@ html(lang="ja")
 
           a.more(href="")
             p more
-            //img(src="../img/more.svg", alt=">")
 
       section#price.position-now
         .inner
           h2 Price
           .title-line
           .price-box
-            img(src='../img/price-img.png')
+            img(src='../img/price-img.png' alt="女性")
             .table-box
               table
                 tr
@@ -231,7 +227,8 @@ html(lang="ja")
         .inner
           .flex
             .footA
-              img(src="../img/logo@2x.png", alt="logo")
+              h2
+                img(src="../img/logo@2x.png", alt="logo")
               p 住所：ほげほげのほげほげ
               p TEL：0000-00-0000
             nav.footB
@@ -255,5 +252,5 @@ html(lang="ja")
             p Copyright © 2018 @haniwa008 All rights reserved.
             p#PageTopBtn
               a(href="#wrap")
-                img(src="../img/topbtn.svg", alt="")
+                img(src="../img/topbtn.svg", alt="ボタン")
         <!-- .inner -->
