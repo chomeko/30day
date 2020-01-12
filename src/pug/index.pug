@@ -10,6 +10,7 @@ html(lang="ja")
     script(src="https://use.fontawesome.com/fb1861bf7a.js")
     script(src="https://code.jquery.com/jquery-2.2.3.min.js")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(type="text/javascript", src="js/position-nav.min.js")
     script(type="text/javascript", src="js/toguru.min.js")
     script(type="text/javascript", src="js/topscroll.min.js")
   body
@@ -23,18 +24,18 @@ html(lang="ja")
           button(type="button").toguru
             span.fa.fa-bars(title="MENU")
         .header-right
-          nav.nav-item
+          nav.nav-item.nav-global
             ul
               li
-                a(href="#") Card
+                a(href="#card" id="card_js") Card
               li
-                a(href="#") News
+                a(href="#news" id="news_js") News
               li
-                a(href="#") Price
+                a(href="#price" id="price_js") Price
               li
-                a(href="#") Access
+                a(href="#access" id="access_js") Access
               li
-                a(href="#") Contact
+                a(href="#contact" id="contact_js") Contact
     main#wrap
       section.conA
         .inner
@@ -42,7 +43,7 @@ html(lang="ja")
             h2 一番伝えたいことを書く
             p リードリードリード
             a(href="#") お問い合わせ
-      section#card
+      section#card.position-now
         h2 Card
         .title-line
         .inner
@@ -89,7 +90,7 @@ html(lang="ja")
                 p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 
         <!-- .inner -->
-      section#news
+      section#news.position-now
         .inner
           h2 News
           .title-line
@@ -128,7 +129,7 @@ html(lang="ja")
             p more
             img(src="../img/more.svg", alt="")
 
-      section#price
+      section#price.position-now
         .inner
           h2 Price
           .title-line
@@ -161,7 +162,7 @@ html(lang="ja")
                 a(href="#") お問い合わせ
                 |ください。
           <!-- .inner -->
-      section#access
+      section#access.position-now
         .inner
           h2 Access
           .title-line
@@ -177,7 +178,7 @@ html(lang="ja")
             p Googleマップで見る
         <!-- .inner -->
 
-      section#contact
+      section#contact.position-now
         .inner
           h2 Contact
           .title-line
