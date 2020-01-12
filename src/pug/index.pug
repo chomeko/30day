@@ -7,6 +7,7 @@ html(lang="ja")
     title Document
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP&display=swap&subset=japanese,latin-ext" rel="stylesheet")
     script(src="https://use.fontawesome.com/fb1861bf7a.js")
     script(src="https://code.jquery.com/jquery-2.2.3.min.js")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
@@ -138,24 +139,25 @@ html(lang="ja")
             .table-box
               table
                 tr
-                  th
-                  th column1
-                  th column2
+                  th.th_2
+                  th colomn1
+                  th colomn2
                 tr
-                  td row1
+                  th row1
                   td 100円
                   td 100円
                 tr
-                  td row2
+                  th row2
                   td 6,000円
                   td 0円
                 tr
-                  td(rowspan="1") row3
-                  td <span>6,000円</span><br>
-                    | ※ 今だけ半額
+                  th.th_3(rowspan="1") row3
+                  td <span class="aaa">6,000円</span><br>
+                    |
+                    span ※ 今だけ半額
                   td 0円
                 tr
-                  td row4
+                  th row4
                   td 100円
                   td 100円
               p ※ 目安なので詳しくは
