@@ -65,12 +65,15 @@ section#news
     margin-bottom: 29px
     position: relative
     font-family: $font_en
-    img
+    &::after
       position: absolute
+      background-image: url("/img/more.svg")
       content: ''
       top: 55%
       right: -10px
       transform: translateY(-45%)
+      width: 7px
+      height: 11px
     p
       color: #e81919
 
