@@ -1,5 +1,5 @@
 $(function () {
-  var set = 100;//ウインドウ上部からどれぐらいの位置で変化させるか
+  var set = 150;//ウインドウ上部からどれぐらいの位置で変化させるか
   var boxTop = new Array;
   var current = -1;
   //各要素の位置
