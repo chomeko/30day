@@ -10,12 +10,8 @@ html(lang="ja")
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP&display=swap&subset=japanese")
-    script(src="https://use.fontawesome.com/fb1861bf7a.js")
-    script(src="https://code.jquery.com/jquery-2.2.3.min.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-    script(src="js/position-nav.min.js")
-    script(src="js/toguru.min.js")
-    script(src="js/topscroll.min.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
+    
   body
     header
       .container
@@ -41,11 +37,43 @@ html(lang="ja")
                 a(href="#contact" id="contact_js") Contact
     main#wrap
       section.conA
-        .inner
-          .text
-            h2 一番伝えたいことを書く
-            p リードリードリード
-            a(href="#") お問い合わせ
+        
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              .text
+                h2 一番伝えたいことを書く
+                p リードリードリード
+                a(href="#") お問い合わせ
+              img(src="../img/mainvisual@2x.png" alt="")
+            .swiper-slide
+              .text
+                h2 一番伝えたいことを書く
+                p リードリードリード
+                a(href="#") お問い合わせ
+              img(src="../img/variation-69470_1280.jpg" alt="")
+            .swiper-slide
+              .text
+                h2 一番伝えたいことを書く
+                p リードリードリード
+                a(href="#") お問い合わせ
+              img(src="../img/search-2041815_1280.jpg" alt="")
+            .swiper-slide
+              .text
+                h2 一番伝えたいことを書く
+                p リードリードリード
+                a(href="#") お問い合わせ
+              img(src="../img/change-671374_1280.jpg" alt="")
+            .swiper-slide
+              .text
+                h2 一番伝えたいことを書く
+                p リードリードリード
+                a(href="#") お問い合わせ
+              img(src="../img/ore4.png" alt="")
+          .swiper-button-prev
+          .swiper-button-next
+          .swiper-pagination
+          
       section#card.position-now
         h2 Card
         .title-line
@@ -250,3 +278,11 @@ html(lang="ja")
               a(href="#wrap")
                 img(src="../img/topbtn.svg", alt="ボタン")
         <!-- .inner -->
+  script(src="https://use.fontawesome.com/fb1861bf7a.js")
+  script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+  script(src="js/position-nav.min.js")
+  script(src="js/toguru.min.js")
+  script(src="js/topscroll.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js")
+  script(src="js/swiper.min.js")
