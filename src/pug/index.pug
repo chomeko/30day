@@ -11,7 +11,7 @@ html(lang="ja")
     link(rel="stylesheet", href="css/style.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP&display=swap&subset=japanese")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
-    
+    link(rel="stylesheet" href="css/animate.css")
   body
     header
       .container
@@ -37,7 +37,6 @@ html(lang="ja")
                 a(href="#contact" id="contact_js") Contact
     main#wrap
       section.conA
-        
         .swiper-container
           .swiper-wrapper
             .swiper-slide
@@ -73,8 +72,8 @@ html(lang="ja")
           .swiper-button-prev
           .swiper-button-next
           .swiper-pagination
-          
-      section#card.position-now
+
+      section#card.position-now.wow.fadeInDown(data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="300")
         h2 Card
         .title-line
         .inner
@@ -121,7 +120,7 @@ html(lang="ja")
                 p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 
         <!-- .inner -->
-      section#news.position-now
+      section#news.position-now.wow.fadeInDown(data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="300")
         .inner
           h2 News
           .title-line
@@ -150,7 +149,7 @@ html(lang="ja")
           a.more(href="")
             p more
 
-      section#price.position-now
+      section#price.position-now.wow.fadeInDown(data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="300")
         .inner
           h2 Price
           .title-line
@@ -184,7 +183,7 @@ html(lang="ja")
                 a(href="#") お問い合わせ
                 |ください。
           <!-- .inner -->
-      section#access.position-now
+      section#access.position-now.wow.fadeInDown(data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="300")
         .inner
           h2 Access
           .title-line
@@ -200,7 +199,7 @@ html(lang="ja")
             p Googleマップで見る
         <!-- .inner -->
 
-      section#contact.position-now
+      section#contact.position-now.wow.fadeInDown(data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="300")
         .inner
           h2 Contact
           .title-line
@@ -286,3 +285,5 @@ html(lang="ja")
   script(src="js/topscroll.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js")
   script(src="js/swiper.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js")
+  script(src="js/wow.js")
