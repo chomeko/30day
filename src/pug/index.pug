@@ -19,22 +19,24 @@ html(lang="ja")
           h1
             a(href="#")
               img(src='../img/logo@2x.png' alt="logo")
+          .toguru
+            span.navbar_toggle_icon
+            span.navbar_toggle_icon
+            span.navbar_toggle_icon
+        .menu.nav-global
+          .menu-block
+          ul
+            li
+              a(href="#card" id="card_js") Card
+            li
+              a(href="#news" id="news_js") News
+            li
+              a(href="#price" id="price_js") Price
+            li
+              a(href="#access" id="access_js") Access
+            li
+              a(href="#contact" id="contact_js") Contact
 
-          button(type="button").toguru
-            span.fa.fa-bars(title="MENU")
-        .header-right
-          nav.nav-item.nav-global
-            ul
-              li
-                a(href="#card" id="card_js") Card
-              li
-                a(href="#news" id="news_js") News
-              li
-                a(href="#price" id="price_js") Price
-              li
-                a(href="#access" id="access_js") Access
-              li
-                a(href="#contact" id="contact_js") Contact
     main#wrap
       section.conA
         .swiper-container
@@ -281,7 +283,7 @@ html(lang="ja")
   script(src="https://code.jquery.com/jquery-2.2.3.min.js")
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
   script(src="js/position-nav.min.js")
-  script(src="js/toguru.min.js")
+  script(src="js/toguru2.js")
   script(src="js/topscroll.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js")
   script(src="js/swiper.min.js")

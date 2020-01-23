@@ -1,7 +1,4 @@
-/* header */
 header
-  background-color: $blue
-  box-shadow: 0px 3px 3px #00000029
   position: fixed
   z-index: 100
   width: 100%
@@ -10,50 +7,105 @@ header
     .header-left img
       width: 200px
       vertical-align: text-bottom
-    .nav-item
-      font-family: 'Lato', sans-serif
-      li
-        font-size: 1.6rem
-        a
-          display: block
-          color: $whit
-  .link-current
-    border-bottom: 2px solid red
+    .navbar_toggle
+      z-index: 9999
+
+    .navbar_toggle_icon
+      position: relative
+      display: block
+      height: 2px
+      width: 30px
+      background: #FFFFFF
+      -webkit-transition: ease .5s
+      transition: ease .5s
+
+    .navbar_toggle_icon:nth-child(1)
+      top: 0
+
+    .navbar_toggle_icon:nth-child(2)
+      margin: 8px 0
+
+    .navbar_toggle_icon:nth-child(3)
+      top: 0
+
+    /*OPEN時の動き*/
+    .toguru.open .navbar_toggle_icon:nth-child(1)
+      top: 10px
+      -webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+
+    .toguru.open .navbar_toggle_icon:nth-child(2)
+      -webkit-transform: translateY(-50%)
+      transform: translateY(-50%)
+      opacity: 0
+
+    .toguru.open .navbar_toggle_icon:nth-child(3)
+      top: -10px
+      -webkit-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+
+    .menu
+      z-index: 1000
+
+    .menu ul li
+      font-size: 1.6rem
+
+    /*OPEN時の動き*/
+    .menu.open
+      height: 100%
+      -webkit-transform: translateX(0)
+      transform: translateX(0)
+      overflow-y: auto
+      -webkit-overflow-scrolling: touch
+    .link-current
+      border-bottom: 2px solid red
 
 @media (max-width: 767px)
   header
     display: flex
-    height: 50px
+    height: 100%
     .header-left
+      background-color: $blue
+      box-shadow: 0px 3px 3px #00000029
       height: 50px
       display: flex
       justify-content: space-between
       align-items: center
     .toguru
       margin-right: 20px
-      font-size: 30px
       color: $whit
-      border: none
-      outline: none
-      background: none
-      font-size: 28px
       opacity: 0.5
-      padding: 0
-    .header-right
-      display: none
-      background-color: rgba(0, 0, 0, 0.6)
-      .nav-item
-        li
-          padding: 10px
-        li a:hover
-          color: $blue
-          //background-image: linear-gradient(rgba(225,225,225,0.2),rgba(225,225,225,0.2))
+    .menu
+      //z-index: 1000
+      -webkit-transform: translateX(-100%)
+      transform: translateX(-100%)
+      -webkit-transition: ease .9s
+      transition: ease .9s
+      display: flex
+      height: 100%
+      .menu-block
+        width: 175px
+        height: auto
+        background: rgba(0, 0, 0, 0.9)
+      ul
+        background-color: #FFFFFF
+      li
+        width: 200px
+        //border-bottom: 1px solid $blue
+        padding: 12px 0 12px 20px
+        border-bottom: 1px dashed #707070
+        a
+          color: #707070
+        a:hover
+        color: $blue
     .link-current
       border-bottom: none
 
 
 @media (min-width: 768px)
   header
+    background-color: $blue
+    box-shadow: 0px 3px 3px #00000029
     height: 100px
     .container
       max-width: 1086px
@@ -63,12 +115,15 @@ header
       justify-content: space-between
       align-items: center
     .header-left .toguru
-      display: none
-    .header-right
+        display: none
+    .menu
+      font-family: 'Lato', sans-serif
       display: block !important
       margin-right: 12px
-    .nav-item
       ul
         display: flex
+      li a
+        display: block
+        color: $whit
       li:not(first-child)
         padding-left: 30px
