@@ -17,7 +17,7 @@ header
       background: #FFFFFF
       -webkit-transition: ease .5s
       transition: ease .5s
-
+    /* 通常時のトグル*/
     .navbar_toggle_icon:nth-child(1)
       top: 0
 
@@ -45,7 +45,7 @@ header
     .menu ul li
       font-size: 1.6rem
 
-    /*OPEN時の動き*/
+    /*メニューのOPEN時の動き高さ１００％ */
     .menu.open
       height: 100vh
       -webkit-transform: translateX(0)
@@ -72,6 +72,7 @@ header
       margin-right: 20px
       color: $whit
       opacity: 0.5
+    /* 普段は-100%でしまっている */
     .menu
       -webkit-transform: translateX(-100%)
       transform: translateX(-100%)
