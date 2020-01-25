@@ -1,5 +1,6 @@
 $(function() {
     var TopBtn = $('#PageTopBtn');
+    /*ボタン非表示*/
     TopBtn.hide();
     // スクロール位置が100でボタンを表示
     $(window).scroll(function() {
@@ -17,4 +18,4 @@ $(function() {
         }, 800);
         return false;
     });
-  });
+});
