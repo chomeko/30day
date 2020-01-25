@@ -146,31 +146,18 @@ section#contact
     width: 290px
     margin: auto
     margin-bottom: 28px
-    .check-test
-      display: none
-    .check-test + span
-      cursor: pointer
-      display: inline-block
-      margin: 0 0.2em 0
-      padding-left: 40px
-      position: relative
-      a
-        text-decoration: underline
-        color: #333333
-    .check-test + span::before
-      -webkit-transform: translateY(-50%)
-      background: #fff
-      border: 1px solid #707070
-      border-radius: 2px
-      content: ""
-      display: block
-      height: 30px
-      left: 0
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      width: 30px
-    .check-test + span::after
+    display: flex
+    align-items: center
+    justify-content: center
+  .check-test
+    display: none
+  .label
+    width: 30px
+    height: 30px
+    border: 1px solid #000
+    display: inline-block
+    position: relative
+    &::after
       -webkit-transform: translateY(-50%) rotate(-45deg)
       border-bottom: 4px solid #3F51B5
       border-left: 4px solid #3F51B5
@@ -185,8 +172,13 @@ section#contact
       transform: translateY(-50%) rotate(-45deg)
       transition: all 0.3s ease 0s
       width: 20px
-    .check-test:checked + span::after
-      opacity: 1
+  .check-test:checked + label::after
+    opacity: 1
+  #privacy-btn
+    cursor: pointer
+    display: inline-block
+    text-decoration: underline
+    margin-left: 20px
   .form-submit
     display: block
     width: 261px
