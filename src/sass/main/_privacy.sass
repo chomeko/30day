@@ -10,9 +10,12 @@
 section#privacy
   background: $whit
   color: #707070
-  width: 930px
-  margin-top: 206px
-  margin: auto
+  max-width: 930px
+  width: 95%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
   .inner
     max-width: 930px
     position: relative
@@ -33,6 +36,7 @@ section#privacy
       padding-left: 83.5px
       padding-right: 56.5px
       margin-bottom: 30px
+      //height: auto
       &:last-child
         margin-bottom: 19px
     &__heading
@@ -92,3 +96,20 @@ section#privacy
         height: 3px
         background: $whit
         transform: rotate(-45deg)
+@media (max-width: 767px)
+  section#privacy
+    width: 95%
+    .privacy
+      overflow-y: scroll
+      &__warapper
+        height: 100%
+        width: 100%
+      &__title
+        padding-top: 35px
+      &__description
+        overflow-y: scroll
+      &__list
+        padding-left: 50px
+        padding-right: 35px
+      &__btn--secondary
+        display: none
