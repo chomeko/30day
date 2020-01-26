@@ -276,6 +276,7 @@ html(lang="ja")
               p.answer アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。
                 span.as-a A
       <!-- .inner -->
+      <!-- モーダル -->
       .privacy__modal
         section.privacy#privacy
           .inner
@@ -288,7 +289,11 @@ html(lang="ja")
               li.privacy__list
                 h3.privacy__heading ほにゃらら
                 p.privacy__description ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。
-            a.privacy__btn.privacy__btn--feature.privacy--close 閉じる
+            <!-- モーダルのcloseボタン -->
+            .privacy--close
+              a.privacy__btn--feature 閉じる
+              a.privacy__btn--secondary
+                span
           <!-- .inner -->
     footer
       section#footer
