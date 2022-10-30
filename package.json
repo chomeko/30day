@@ -19,7 +19,7 @@
   "homepage": "https://github.com/chomeko/30day#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "css-declaration-sorter": "^4.0.1",
     "gulp": "^4.0.2",
     "gulp-ejs": "^5.0.0",
